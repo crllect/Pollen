@@ -35,3 +35,7 @@ ul {
 section {
   padding: 5em 2em;
 }
+
+code {
+  text-color: --secondary-color;
+}
