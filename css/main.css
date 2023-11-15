@@ -1,26 +1,28 @@
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
 :root {
   --primary-color: #ffffff;
   --secondary-color: #FFD700;
   --link-color: #FFD700;
   --div-color: #ffffff;
-  --navBar-color: #25252a;
-  --navBar2-color: #4c4c4f;
-  --background-color: #060607;
-  --background2-color: #141415;
+  --navBar-color: #ffffff; /* Updated to white */
+  --navBar2-color: #FFD700; /* Updated to gold */
+  --background-color: #FFD700; /* Updated to white */
+  --background2-color: #000000; /* Updated to gold */
   --primaryLight-color: #ffdce9;
   --primaryDark-color: #430019;
 }
 
 body {
-  background-image: linear-gradient(100deg, var(--background-color), var(--background2-color));
+  background-image: linear-gradient(130deg, var(--background2-color), var(--background-color));
   transition: 0.3s linear;
-  margin: 0;
+  margin: 3em;
   font-family: "Work Sans";
   overflow: auto;
   min-height: 100vh;
-  color: #ffffff;
+  color: var(--primary-color);
 }
+
 a {
   color: var(--link-color);
   text-decoration: none;
@@ -37,5 +39,15 @@ section {
 }
 
 code {
-  color: --secondary-color;
+  font-weight: bold;
+  color: var(--secondary-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--navBar-color); /* Updated to white */
 }
